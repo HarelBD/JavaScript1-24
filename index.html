@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div>
+        <h1>Mission Number 1</h1>
+        <label>put a number</label>
+        <input id="input_text" type="number">
+        <button onclick="sendinfo()">Submit</button>
+        <p id="answer"></p>
+    </div>
+    <hr>
+
+    <div>
+        <h1>Mission Number 2</h1>
+        <label>Enter numbers to get an average</label>
+        <br /><br />
+        <input id="input_avg_num1" type="number"><br />
+        <input id="input_avg_num2" type="number"><br />
+        <input id="input_avg_num3" type="number"><br />
+        <input id="input_avg_num4" type="number"><br /><br />
+        <button onclick="check_avg_button()">check</button>
+        <p id="avg_answer"></p>
+
+    </div>
+    <hr>
+    <div>
+        <h1>Mission Number 3</h1>
+        <label>Enter Your name and your score</label><br /><br />
+        <label>Player 1</label><br />
+
+        <input id="input_player1_name" type="text" placeholder="player1 Name"><br />
+        <input id="input_player1_score" type="number" placeholder="player1 Score"><br />
+        <hr>
+        <label>Player 2</label><br />
+
+        <input id="input_player2_name" type="text" placeholder="player2 Name"><br />
+        <input id="input_player2_score" type="number" placeholder="player2 Score"><br />
+        <br /><button onclick="check_who_win()">Check</button>
+        <p id="winner"></p>
+    </div>
+    <hr>
+    <div>
+        <h1>Mission Number 4</h1>
+        <label>Enter local time(Hours Only)</label><br /><br />
+        <input id="input_hour_time" type="number" placeholder="hour"><br />
+        <br /><button onclick="check_hour_time()">Check</button>
+        <p id="time"></p>
+    </div>
+    <hr>
+
+    <div>
+        <h1>Mission Number 5</h1>
+        <label>Enter the number of the Railroad car (of a train)</label><br /><br />
+        <input id="input_railRoadCar_number" type="number" placeholder="Number"><br /><br />
+        <label>Enter the time on the day</label><br /><br />
+        <input id="input_time_of_the_day" type="number">
+        <br /><br />
+        <label>Enter the salary of the driver</label><br />
+        <input id="input_driver_salary" type="number" placeholder="Salary"><br />
+        <br /><button onclick="check_railprofit_button()">Check</button>
+        <p id="profit"></p>
+
+    </div>
+    <hr>
+
+    <div>
+        <h1>Mission Number 6</h1>
+        <label>Enter the Price of the car before the Discount</label><br /><br />
+        <input id="input_car_price" type="number" placeholder="Car Price"><br /><br />
+        <label>Enter the Number of credit payments per month</label><br /><br />
+        <input id="input_credit_payments" type="number" placeholder="Num of Credit Paymetns"><br /><br />
+        <br /><button onclick="check_car_price()">Check</button>
+        <p id="price"></p>
+
+    </div>
+
+    <hr>
+    <div>
+        <h1>Mission Number 7</h1>
+        <label>Enter a number of people waiting at the station</label><br /><br />
+        <input id="input_ppl_num" type="number" placeholder="Number of people that waiting"><br /><br />
+        <br /><button onclick="check_ppl_num()">Check</button>
+        <p id="taxi"></p>
+    </div>
+    <hr>
+
+    <div>
+        <h1>Mission Number 8</h1>
+        <label>Enter a number of Students</label><br/><br/>
+        <input id="input_student_num" type="number" placeholder="Number of students"><br /><br />
+        <br /><button onclick="check_students_num()">Check</button>
+        <p id="Guard"></p>
+        <p id="First_Help"></p>
+    </div>
+    <hr>
+    <div>
+        <h1>Mission Number 9</h1>
+        <label>check if foo is Equal to thursday or Thursday or 5 in Console</label><br/><br/>
+        <input id="input_foo" type="text" placeholder="Type Thursday, thursday, or 5"><br /><br />
+        <br /><button onclick="my_foo()">Check</button>
+
+    </div>
+    <hr>
+    <div>
+        <h1>Mission Number 10</h1>
+        <label>Enter your BMI</label><br/><br/>
+        <input id="input_bmi" type="number" placeholder="BMI Number"><br /><br />
+        <br /><button onclick="check_bmi()">Check</button>
+    </div>
+    <hr>
+    <div>
+        <h1>Mission Number 11</h1>
+        <label>IN PROGRESS!@@@@</label><br/><br/>
+        <input id="input_bmi" type="number" placeholder="BMI Number"><br /><br />
+        <br /><button onclick="check_bmi()">Check</button>
+    </div>
+    <hr>
+    <div>
+        <h1>Mission Number 12</h1>
+        <label>The root of 100</label><br/><br/>
+        <input id="input_root" type="number" value="100"><br /><br />
+        <br /><button onclick="check_root()">Check</button>
+        <p id="root"></p>
+    </div>
+    <hr>
+    <div>
+        <h1>Mission Number 13</h1>
+        <label>Click on the Button to display another Button</label><br/><br/>
+        <button id="button1" onclick="invisible_button()">Click me!</button>
+        <button id="button2" style="display:none">I am button number 2</button>
+    </div>
+    <hr>
+    <div>
+        <h1>Mission Number 14</h1>
+        <label>Click on the Button will open a new tab of Google</label><br/><br/>
+        <button id="button1" onclick="window.open('http://www.google.com')">Click me!</button>
+    </div>
+    <hr>
+    <div>
+        <h1>Mission Number 15</h1>
+        <label>Click on the Button will show time and date</label><br/><br/>
+        <button id="button" onclick="check_time_date()">check</button>
+        <p id="date_and_time"></p>
+    </div>
+    <hr>
+    <div>
+        <h1>Mission Number 16</h1>
+        <label>Please fill a number</label><br/><br/>
+        <input id="input_hello_number" type="number"><br /><br />
+        <button id="button" onclick="check_hello_num()">click</button>
+        <p id="hello_paragraph"></p>
+    </div>
+    <hr>
+    <div>
+        <h1>Mission Number 17</h1>
+        <label>Please fill a text to see it again x 10 times</label><br/><br/>
+        <input id="input_user_text" type="text"><br /><br />
+        <button id="button" onclick="duplicate_user_text()">click</button>
+        <p id="user_text"></p>
+    </div>
+    <hr>
+    <div>
+        <h1>Mission Number 18</h1>
+        <label>Please fill numbers and lets see which one is bigger</label><br/><br/>
+        <label>score number 1</label>
+        <input id="input_text_a" type="number"><br /><br />
+        <label>score number 2</label>
+        <input id="input_text_b" type="number"><br /><br />
+        <button id="button" onclick="num_a_or_b()">click</button>
+    </div>
+    <hr>
+    <h1>Mission Number 19</h1>
+    <label>Please fill price  and the tip you wanna give</label><br/><br/>
+    <label>total meal price:</label>
+    <input id="input_food_price" type="number" ><br /><br />
+    <label>tip %:</label>
+    <input id="input_tip_price" type="number"><br /><br />
+    <button id="button" onclick="calc_price_tip()">click</button>
+    <p id="dining_price"></p>
+</div>
+<hr>
+<h1>Mission Number 20</h1>
+<span id="myScore"></span><br><br>
+<button id="button" onclick="btn_up()">↑ one point up ↑</button>
+<button id="button" onclick="btn_down()">↓ one point down ↓</button>
+<button id="button" onclick="btn_reset()">↻ reset ↻</button>
+<p id="dining_price"></p>
+</div>
+
+<hr>
+<h1>Mission Number 21</h1>
+
+<button id="button" onclick="btn_quote()">click for quote</button>
+<p id="quote_text"></p>
+</div>
+<hr>
+<h1>Mission Number 22</h1>
+
+<button onclick="btn_names()">click to print in console 5 names</button>
+</div>
+<hr>
+
+<h1>Mission Number 23</h1>
+<label></label>
+<input id="books_input" type="text" placeholder="Type your Fav Book"><br /><br />
+<button onclick="btn_books1()">click here to add a book to the list</button>
+<button onclick="btn_books2()">Book list</button>
+<p id="book_p"></p>
+
+</div>
+
+
+
+
+
+
+
+
+
+    <script src="js.js"></script>
+</body>
+
+</html>
